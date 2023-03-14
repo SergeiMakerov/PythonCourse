@@ -1,0 +1,7 @@
+total = int(input("Введите сколько всего журавликов: "))
+
+katya = int((total/3)*2)
+petya = int((katya/2)/2)
+sereza = int(petya)
+
+print(petya, katya, sereza)
