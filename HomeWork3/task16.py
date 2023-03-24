@@ -14,7 +14,7 @@ print(f'n = {n}')
 count = 0
 list = []
 for i in range(n):
-        list.append(random.randint(0, 10))
+    list.append(random.randint(0, 10))
 print(*list)
 for j in list:
     if j == x:
