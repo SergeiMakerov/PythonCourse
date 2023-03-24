@@ -7,15 +7,17 @@
 #     3
 #     -> 1
 
-x = int(input("Введите число элементов N: "))
-y = int(input("Введите число X : "))
+import random
+n = int(input("Введите число элементов N: "))
+x = int(input("Введите число X: "))
+print(f'n = {n}')
 count = 0
 list = []
-for i in range(1, x+1):
-    if i <= x:
-        list.append(i)
+for i in range(n):
+        list.append(random.randint(0, 10))
 print(*list)
 for j in list:
-    if j == y:
+    if j == x:
         count += 1
-print(count)
+print(f'x = {x}')
+print(f'-> {count}')

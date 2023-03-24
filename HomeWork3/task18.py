@@ -8,16 +8,16 @@
 #     6
 #     -> 5
 
+import random
 n = int(input("Введите колличество элементов N: "))
-l = list(range(1, n + 1))
 x = int(input("Введите число X: "))
 
 print(f'n = {n}')
-result = 0
-for i in range(n + 1):
-    if abs(i - x) < abs(result - x):
-        result = i
-print(*l)
+list = [random.randint(0, 10) for i in range(n)]
+print(*list)
+num = list[0]
+for i in list:
+    if abs(i - x) < abs(num - x):
+     num = i
 print(f'x = {x}')
-print(f'-> {result} ')
-print(" ")
+print(f'-> {num}')
